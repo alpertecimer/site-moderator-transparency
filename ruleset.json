@@ -14,6 +14,8 @@
     "moderationEvasionBonusPoints": 1,
     "highImpactIndependentConfirmationPoints": 5,
     "targetedObsceneReactionPoints": 2,
+    "rawContentRetentionDays": 45,
+    "conflictWarning": { "signals": 2, "distinctParticipants": 2, "continuationMinutes": 5 },
     "conflictCooldownMinutes": [20, 60]
   },
   "rules": [
@@ -39,5 +41,5 @@
     { "id": "K20", "title": "Çatışma tırmanması", "automation": "hybrid", "basePoints": null, "milestone": "V0.5" },
     { "id": "K21", "title": "Acil kanal kötüye kullanımı", "automation": "hybrid", "basePoints": 2, "milestone": "V0.5" }
   ],
-  "sha256": "56910e219a875dc2517a7be459175b7ed3f827b45a7b37c14f436fad74a28221"
+  "sha256": "916de5ceaf5dfb25439bd23ea4299a2f73b1c5e3410ff0f64bfe9be5b5d77dd9"
 }
