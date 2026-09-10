@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesetId": "v1.1",
+  "rulesetId": "v1.2",
   "policy": {
     "timezone": "Europe/Istanbul",
     "activePointDays": 30,
@@ -10,6 +10,10 @@
     "voice": { "maxDurationSeconds": 120, "maxCount": 5, "rollingWindowMinutes": 30 },
     "generalFlood": { "maxCount": 10, "rollingWindowSeconds": 60 },
     "aiEnforcementConfidence": 0.95,
+    "aiContextWindowMessages": 4,
+    "moderationEvasionBonusPoints": 1,
+    "highImpactIndependentConfirmationPoints": 5,
+    "targetedObsceneReactionPoints": 2,
     "conflictCooldownMinutes": [20, 60]
   },
   "rules": [
@@ -35,5 +39,5 @@
     { "id": "K20", "title": "Çatışma tırmanması", "automation": "hybrid", "basePoints": null, "milestone": "V0.5" },
     { "id": "K21", "title": "Acil kanal kötüye kullanımı", "automation": "hybrid", "basePoints": 2, "milestone": "V0.5" }
   ],
-  "sha256": "8567a19556978c0d9d50e9ed384867bed9b345d2ab858da6b221d036d332efea"
+  "sha256": "88b0ad284290aa9d4e77328722457f5aa36deba72f1d7135a6ec79bb6e7e441b"
 }
