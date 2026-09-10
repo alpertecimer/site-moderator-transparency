@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "rulesetId": "v0.2-development",
+  "privacy": {
+    "timePrecision": "day",
+    "containsMessageContent": false,
+    "containsPersonalIdentifiers": false,
+    "containsStableUserPseudonym": false
+  },
+  "decisions": []
+}
