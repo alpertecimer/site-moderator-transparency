@@ -30,7 +30,7 @@
     <section class="intro" id="ust">
       <div class="shell intro-grid">
         <div>
-          <p class="eyebrow">Şeffaflık kaydı · 1.2 yayına hazır</p>
+          <p class="eyebrow">Şeffaflık kaydı · 1.3 üretim adayı</p>
           <h1>Kurallar kişiye göre değil, herkese aynı şekilde uygulanır.</h1>
           <p class="lede">Bu sayfa, site ve komşuluk iletişim grubunun ilan edilmiş kurallarını, otomatik yönetim yöntemini ve anonim karar kayıtlarını tek yerde açıklar.</p>
           <div class="notice" role="status">
@@ -39,8 +39,8 @@
           </div>
         </div>
         <aside class="fact-card" aria-label="Geliştirme durumu">
-          <p class="fact-label">Yayına hazır sürüm</p>
-          <p class="fact-value">1.2</p>
+          <p class="fact-label">Üretim adayı sürüm</p>
+          <p class="fact-value">1.3</p>
           <dl>
             <div><dt>Yönetim</dt><dd>Otomatik</dd></div>
             <div><dt>İnsan itirazı</dt><dd>Yok</dd></div>
@@ -73,11 +73,11 @@
           <p>AI yalnız ilan edilmiş katalog içinde sınıflandırır. Doğrudan mesaj kuralları en az %95 güven ve inceleme gerektirmeyen sonuç ister; şüphede yaptırım uygulanmaz.</p>
         </div>
         <div class="rule-list" role="list">
-          <article role="listitem"><b>K01</b><div><h3>İçeriksiz selamlama ve kutlama</h3><p>Bilgi, soru veya eylem taşımayan salt selam ve temenniler.</p></div><span>Sil · 0</span></article>
+          <article role="listitem"><b>K01</b><div><h3>İçeriksiz selamlama ve kutlama</h3><p>Bilgi, soru veya eylem taşımayan salt selam ve temenniler. Önceki konuşmayı kapatan iyi geceler/kandil dileği korunur.</p></div><span>Sil · 0</span></article>
           <article role="listitem"><b>K02</b><div><h3>Toplulukla ilgisiz içerik</h3><p>Site ve çevredeki ortak yaşamla makul ilgisi olmayan sosyal içerik.</p></div><span>AI · 0</span></article>
           <article role="listitem"><b>K03</b><div><h3>Siyasi propaganda ve çatışma</h3><p>Taraf tutma, oy isteme, slogan ve siyasi tercihe göre hedef alma.</p></div><span>AI · +1</span></article>
           <article role="listitem"><b>K04</b><div><h3>Dini veya ideolojik propaganda</h3><p>Vaaz, zincir mesaj ve ideolojik ikna; somut komşuluk duyuruları hariç.</p></div><span>AI · +1</span></article>
-          <article role="listitem"><b>K05</b><div><h3>Ticari reklam ve satış</h3><p>Tekil bireysel ilan +0; ticari reklam veya ısrarlı profesyonel pazarlama +1.</p></div><span>AI · 0/+1</span></article>
+          <article role="listitem"><b>K05</b><div><h3>Ticari reklam ve satış</h3><p>Site içindeki daire/otopark/depo için tekil komşuluk ilanı serbesttir; site dışı bireysel ilan +0, ticari veya ısrarlı profesyonel pazarlama +1.</p></div><span>AI · 0/+1</span></article>
           <article role="listitem"><b>K06</b><div><h3>Dış bağış ve kampanya</h3><p>Toplulukla doğrudan ilgisi olmayan bağış, imza ve kampanya çağrıları.</p></div><span>AI · 0</span></article>
           <article role="listitem"><b>K07</b><div><h3>Kişiye yönelik hakaret</h3><p>Kişinin zekâsını, karakterini veya insan değerini hedef alan saldırı; başka kullanıcının mesajına açık 🖕 reaksiyonu dahildir.</p></div><span>Hibrit · +2</span></article>
           <article role="listitem"><b>K08</b><div><h3>Alay, küçümseme ve tahrik</h3><p>Hedefli iğneleme, aşağılama veya kavgayı kışkırtan söylem.</p></div><span>AI · +2</span></article>
@@ -95,8 +95,17 @@
           <article role="listitem"><b>K20</b><div><h3>Çatışmanın tırmanması</h3><p>İki farklı katılımcının karşılıklı geriliminde önce uyarı verilir; 5 dakika içinde sürerse grup 20 dakika soğutulur.</p></div><span>Uyarı → soğutma</span></article>
           <article role="listitem"><b>K21</b><div><h3>Acil kanal kötüye kullanımı</h3><p>Acil bildirim mekanizmasını kasıtlı veya tekrarlı biçimde amacı dışında kullanma.</p></div><span>Sil · +2</span></article>
         </div>
-        <p class="machine-link"><a href="ruleset.json">Makine tarafından okunabilir V1.2 ruleset ve SHA-256 özeti →</a></p>
+        <p class="machine-link"><a href="ruleset.json">Makine tarafından okunabilir V1.3 ruleset ve SHA-256 özeti →</a></p>
       </div>
+    </section>
+
+    <section class="section shell" id="topluluk-guvenligi">
+      <div class="section-heading split-heading">
+        <div><p class="eyebrow">Topluluk güvenliği</p><h2>Anonim şikâyet ve üyelik başvurusu</h2></div>
+        <p>Bu mekanizmalar üretimde ayrıca etkinleştirilir; şikâyetçi kimliği hedefe veya gruba açıklanmaz.</p>
+      </div>
+      <div class="notice"><strong>Şikâyet eşiği</strong><span>Yedi günde aynı hedef için kişi başına yalnız bir kayıt sayılır. Üç farklı mevcut üyede özel uyarı, beş farklı mevcut üyede çıkarma uygulanır ve gruba olay detayı olmadan genel sebep yazılır.</span></div>
+      <p>Üye ekleme botta toplanır. Katılmak isteyen kişi bota kendi WhatsApp hesabından Ad Soyad, Blok ve Daire No gönderir; isterse bot bu üç bilgiyi kısa sorularla sırayla tamamlar ve kişiyi ayrı bir onay kuyruğu olmadan gruba ekler. Bu işlem kimlik garantisi değil, kayıt ve caydırıcılık kontrolüdür.</p>
     </section>
 
     <section class="section shell" id="kararlar">
@@ -114,13 +123,13 @@
     <section class="section section-dark" id="gizlilik">
       <div class="shell privacy-grid">
         <div><p class="eyebrow">Veri minimizasyonu</p><h2>Şeffaflık, kişileri teşhir etmek değildir.</h2></div>
-        <div><p>Public sayfa yalnız kuralın nasıl uygulandığını gösterir. Mesaj içeriği ve kimlik verileri özel audit alanından dışarı çıkmaz.</p><ul><li>Form, üyelik ve kullanıcı takibi yoktur.</li><li>Çerez ve üçüncü taraf analiz kodu yoktur.</li><li>Kişi bazında kalıcı public takma kimlik yoktur.</li></ul></div>
+        <div><p>Public sayfa yalnız kuralın nasıl uygulandığını gösterir. Mesaj içeriği, şikâyetçi kimliği ve özel üyelik başvurusu bilgileri yerel audit alanından dışarı çıkmaz.</p><ul><li>Public sitede form veya kullanıcı takibi yoktur.</li><li>Çerez ve üçüncü taraf analiz kodu yoktur.</li><li>Kişi bazında kalıcı public takma kimlik yoktur.</li></ul></div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="shell footer-row"><span>Site Moderator · 1.2 yayına hazır</span><a href="https://github.com/alpertecimer/site-moderator-transparency">Kaynak ve değişiklik geçmişi</a></div>
+    <div class="shell footer-row"><span>Site Moderator · 1.3 üretim adayı</span><a href="https://github.com/alpertecimer/site-moderator-transparency">Kaynak ve değişiklik geçmişi</a></div>
   </footer>
 </body>
 </html>

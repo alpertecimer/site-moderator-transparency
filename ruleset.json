@@ -1,22 +1,26 @@
 {
   "schemaVersion": 1,
-  "rulesetId": "v1.2",
+  "rulesetId": "v1.3",
   "policy": {
     "timezone": "Europe/Istanbul",
     "activePointDays": 30,
     "removalThreshold": 5,
     "nightMode": { "startHour": 23, "endHour": 8 },
     "k01GraceSeconds": 90,
+    "k01ClosingContextMinutes": 15,
     "voice": { "maxDurationSeconds": 120, "maxCount": 5, "rollingWindowMinutes": 30 },
     "generalFlood": { "maxCount": 10, "rollingWindowSeconds": 60 },
     "aiEnforcementConfidence": 0.95,
+    "humanReviewConfidence": 0.65,
     "aiContextWindowMessages": 4,
     "moderationEvasionBonusPoints": 1,
     "highImpactIndependentConfirmationPoints": 5,
     "targetedObsceneReactionPoints": 2,
     "rawContentRetentionDays": 45,
     "conflictWarning": { "signals": 2, "distinctParticipants": 2, "continuationMinutes": 5 },
-    "conflictCooldownMinutes": [20, 60]
+    "conflictCooldownMinutes": [20, 60],
+    "complaints": { "windowDays": 7, "warningThreshold": 3, "removalThreshold": 5 },
+    "botMembership": { "applicationFields": ["Ad Soyad", "Blok", "Daire No"], "approvalQueue": false }
   },
   "rules": [
     { "id": "K01", "title": "İçeriksiz selamlama/kutlama", "automation": "deterministic", "basePoints": 0, "milestone": "V0.2" },
@@ -41,5 +45,5 @@
     { "id": "K20", "title": "Çatışma tırmanması", "automation": "hybrid", "basePoints": null, "milestone": "V0.5" },
     { "id": "K21", "title": "Acil kanal kötüye kullanımı", "automation": "hybrid", "basePoints": 2, "milestone": "V0.5" }
   ],
-  "sha256": "916de5ceaf5dfb25439bd23ea4299a2f73b1c5e3410ff0f64bfe9be5b5d77dd9"
+  "sha256": "f9ac2819598078ba4f6c5d0d00b0c92395192adcabac18b25029e25d7ff8f90b"
 }
