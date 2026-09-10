@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesetId": "v0.6-mvp",
+  "rulesetId": "v1.1",
   "privacy": {
     "timePrecision": "day",
     "containsMessageContent": false,

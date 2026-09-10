@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesetId": "v0.6-mvp",
+  "rulesetId": "v1.1",
   "policy": {
     "timezone": "Europe/Istanbul",
     "activePointDays": 30,
@@ -15,25 +15,25 @@
   "rules": [
     { "id": "K01", "title": "İçeriksiz selamlama/kutlama", "automation": "deterministic", "basePoints": 0, "milestone": "V0.2" },
     { "id": "K02", "title": "Toplulukla ilgisiz içerik", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K03", "title": "Siyasi propaganda/çatışma", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K04", "title": "Dini/ideolojik propaganda", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
+    { "id": "K03", "title": "Siyasi propaganda/çatışma", "automation": "ai", "basePoints": 1, "milestone": "V0.3" },
+    { "id": "K04", "title": "Dini/ideolojik propaganda", "automation": "ai", "basePoints": 1, "milestone": "V0.3" },
     { "id": "K05", "title": "Ticari reklam/satış", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
     { "id": "K06", "title": "Dış bağış/kampanya", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K07", "title": "Kişiye hakaret", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K08", "title": "Alay/küçümseme/tahrik", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K09", "title": "Israrlı hedef alma", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K10", "title": "Tehdit", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K11", "title": "Nefret/ayrımcılık", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K12", "title": "Ağır doğrulanamaz kişisel suçlama", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K13", "title": "Mahremiyet", "automation": "hybrid", "basePoints": 0, "milestone": "V0.3" },
+    { "id": "K07", "title": "Kişiye hakaret", "automation": "ai", "basePoints": 2, "milestone": "V0.3" },
+    { "id": "K08", "title": "Alay/küçümseme/tahrik", "automation": "ai", "basePoints": 2, "milestone": "V0.3" },
+    { "id": "K09", "title": "Israrlı hedef alma", "automation": "ai", "basePoints": 2, "milestone": "V0.3" },
+    { "id": "K10", "title": "Tehdit", "automation": "ai", "basePoints": 5, "milestone": "V0.3" },
+    { "id": "K11", "title": "Nefret/ayrımcılık", "automation": "ai", "basePoints": 5, "milestone": "V0.3" },
+    { "id": "K12", "title": "Ağır doğrulanamaz kişisel suçlama", "automation": "ai", "basePoints": 2, "milestone": "V0.3" },
+    { "id": "K13", "title": "Mahremiyet", "automation": "hybrid", "basePoints": 2, "milestone": "V0.3" },
     { "id": "K14", "title": "Spam/flood", "automation": "deterministic", "basePoints": 1, "milestone": "V0.2" },
-    { "id": "K15", "title": "Phishing/zararlı içerik", "automation": "hybrid", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K16", "title": "Moderasyondan kaçınma", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
+    { "id": "K15", "title": "Phishing/zararlı içerik", "automation": "hybrid", "basePoints": 5, "milestone": "V0.3" },
+    { "id": "K16", "title": "Moderasyondan kaçınma", "automation": "ai", "basePoints": 1, "milestone": "V0.3" },
     { "id": "K17", "title": "Moderasyon tartışmasını gruba taşıma", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
     { "id": "K18", "title": "Format/medya teknik sınırları", "automation": "deterministic", "basePoints": 0, "milestone": "V0.2" },
     { "id": "K19", "title": "Bağlamsız/yanıltıcı link", "automation": "hybrid", "basePoints": 0, "milestone": "V0.3" },
     { "id": "K20", "title": "Çatışma tırmanması", "automation": "hybrid", "basePoints": null, "milestone": "V0.5" },
     { "id": "K21", "title": "Acil kanal kötüye kullanımı", "automation": "hybrid", "basePoints": 2, "milestone": "V0.5" }
   ],
-  "sha256": "bd96c41948bc89213b2e5a99fb3622f2bb70aa5f75c8295699461cf05cc7ac4a"
+  "sha256": "8567a19556978c0d9d50e9ed384867bed9b345d2ab858da6b221d036d332efea"
 }
