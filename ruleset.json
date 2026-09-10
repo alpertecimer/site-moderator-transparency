@@ -23,7 +23,7 @@
     { "id": "K04", "title": "Dini/ideolojik propaganda", "automation": "ai", "basePoints": 1, "milestone": "V0.3" },
     { "id": "K05", "title": "Ticari reklam/satış", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
     { "id": "K06", "title": "Dış bağış/kampanya", "automation": "ai", "basePoints": 0, "milestone": "V0.3" },
-    { "id": "K07", "title": "Kişiye hakaret", "automation": "ai", "basePoints": 2, "milestone": "V0.3" },
+    { "id": "K07", "title": "Kişiye hakaret", "automation": "hybrid", "basePoints": 2, "milestone": "V0.3" },
     { "id": "K08", "title": "Alay/küçümseme/tahrik", "automation": "ai", "basePoints": 2, "milestone": "V0.3" },
     { "id": "K09", "title": "Israrlı hedef alma", "automation": "ai", "basePoints": 2, "milestone": "V0.3" },
     { "id": "K10", "title": "Tehdit", "automation": "ai", "basePoints": 5, "milestone": "V0.3" },
@@ -39,5 +39,5 @@
     { "id": "K20", "title": "Çatışma tırmanması", "automation": "hybrid", "basePoints": null, "milestone": "V0.5" },
     { "id": "K21", "title": "Acil kanal kötüye kullanımı", "automation": "hybrid", "basePoints": 2, "milestone": "V0.5" }
   ],
-  "sha256": "88b0ad284290aa9d4e77328722457f5aa36deba72f1d7135a6ec79bb6e7e441b"
+  "sha256": "56910e219a875dc2517a7be459175b7ed3f827b45a7b37c14f436fad74a28221"
 }
