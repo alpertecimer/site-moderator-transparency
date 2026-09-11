@@ -1,7 +1,8 @@
 # Koru • Komşu Asistanı — Şeffaflık Sayfası
 
-Loft Koru Doğa Evleri komşu iletişim grubunu yöneten Koru'nun public ve statik
-kural/çalışma ilkeleri sayfasıdır.
+Loft Koru Doğa Evleri komşu iletişim grubuna katılacak kişiler için hazırlanan,
+mobil öncelikli Koru tanıtımı ve grup kuralları sayfasıdır. Koru'nun ne yaptığı,
+ihlallerin sonuçları, üyelik, şikâyet ve veri kullanımı günlük dille açıklanır.
 
 This repository contains only allowlisted public artifacts. Never add WhatsApp
 message content, phone numbers, user or group identifiers, authentication data,

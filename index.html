@@ -3,136 +3,204 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Koru Komşu Asistanı grup kuralları, otomatik yönetim ilkeleri ve gizlilik açıklaması.">
+  <meta name="description" content="Loft Koru Doğa Evleri WhatsApp grubuna katılmadan önce Koru'yu, grup kurallarını ve olası sonuçları öğrenin.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
-  <title>Koru • Komşu Asistanı — Grup Kuralları</title>
+  <title>Gruba katılmadan önce — Koru</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#icerik">İçeriğe geç</a>
+
   <header class="site-header">
     <div class="shell header-row">
-      <a class="brand" href="#ust" aria-label="Koru Komşu Asistanı ana sayfa">
+      <a class="brand" href="#ust" aria-label="Koru ana sayfa">
         <span class="brand-mark" aria-hidden="true">K</span>
-        <span>Koru <small>Komşu Asistanı</small></span>
+        <span><strong>Koru</strong><small>Komşu Asistanı</small></span>
       </a>
-      <nav aria-label="Ana menü">
-        <a href="#ilkeler">İlkeler</a>
-        <a href="#kurallar">Kurallar</a>
-        <a href="#kararlar">Kendi durumunuz</a>
-        <a href="#gizlilik">Gizlilik</a>
-      </nav>
+      <a class="header-link" href="#kurallar">Kuralları gör</a>
     </div>
   </header>
 
   <main id="icerik">
-    <section class="intro" id="ust">
-      <div class="shell intro-grid">
-        <div>
-          <p class="eyebrow">Loft Koru Doğa Evleri · Sürüm 1.7</p>
-          <h1>Komşu iletişimi, ilan edilmiş kurallarla otomatik yönetilir.</h1>
-          <p class="lede">Koru • Komşu Asistanı, grubun açık ve sakin kalmasına yardımcı olur. Bu sayfada hangi içeriklere müdahale edildiğini, puan sistemini ve kişisel verilerin nasıl korunduğunu görebilirsiniz.</p>
-          <div class="notice" role="status">
-            <strong>Pilot kullanım başladı.</strong>
-            <span>Koru gerçek yaptırım modunda, sınırlı katılımla devrededir. Sistem kademeli olarak daha fazla komşuya açılacaktır.</span>
+    <section class="welcome" id="ust">
+      <div class="shell welcome-grid">
+        <div class="welcome-copy">
+          <p class="context">Loft Koru Doğa Evleri WhatsApp grubu</p>
+          <h1>Gruba katılmadan önce bilmeniz gerekenler</h1>
+          <p class="lead"><strong>Koru</strong>, komşu grubunun kurallarını otomatik uygulayan WhatsApp asistanıdır. İnsan bir yönetici her mesajı tek tek onaylamaz.</p>
+          <div class="plain-summary">
+            <p>Koru, kurala aykırı bir mesajı <strong>gruptan kaldırabilir</strong> ve gerektiğinde <strong>puan verebilir</strong>.</p>
+            <p>Bir mesaj kaldırılırsa sebebi ve güncel puanınız <strong>yalnız size özelden</strong> bildirilir.</p>
           </div>
+          <a class="primary-button" href="#ozet">Nasıl çalıştığını öğren</a>
         </div>
-        <aside class="fact-card" aria-label="Geliştirme durumu">
-          <p class="fact-label">Çalışan sürüm</p>
-          <p class="fact-value">1.7</p>
-          <dl>
-            <div><dt>Yönetim</dt><dd>Otomatik</dd></div>
-            <div><dt>Karar bilgisi</dt><dd>Özel mesaj</dd></div>
-            <div><dt>Aktif puan</dt><dd>30 gün</dd></div>
-            <div><dt>Çıkarma eşiği</dt><dd>5 puan</dd></div>
-          </dl>
+
+        <aside class="consent-card" aria-label="Katılım koşulu özeti">
+          <p class="card-kicker">Katılmadan önce</p>
+          <h2>Bu grup otomatik yönetilir</h2>
+          <ul>
+            <li>Koru hata yapabilir.</li>
+            <li>Her karar için insan incelemesi yapılmaz.</li>
+            <li>Bazı mesajlar yurt dışındaki yapay zekâ servisleriyle değerlendirilebilir.</li>
+          </ul>
+          <p class="consent-text">Gruba katılarak bu sayfadaki kuralları ve veri kullanımını kabul etmiş sayılırsınız.</p>
         </aside>
       </div>
     </section>
 
-    <section class="section shell" id="ilkeler">
-      <div class="section-heading">
-        <p class="eyebrow">Yönetim sözleşmesi</p>
-        <h2>Koru nasıl çalışır?</h2>
+    <section class="section shell" id="ozet">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">Bir dakikada özet</p>
+        <h2>Koru nasıl karar verir?</h2>
       </div>
-      <ol class="principle-grid">
-        <li><span>A1</span><div><h3>İnsandan bağımsız günlük yönetim</h3><p>Günlük mesaj akışını bir yönetici tek tek takip etmez; ilan edilmiş kurallar yazılım tarafından uygulanır.</p></div></li>
-        <li><span>A2</span><div><h3>Açık sınırlar</h3><p>Koru ve kullanılan yapay zekâ bu sayfada bulunmayan yeni bir yasak oluşturamaz.</p></div></li>
-        <li><span>A3</span><div><h3>Bağlamı dikkate alma</h3><p>Yanıt verilen mesaj ve yakın konuşma akışı, tek başına yanıltıcı olabilecek ifadelerin değerlendirilmesinde kullanılır.</p></div></li>
-        <li><span>A4</span><div><h3>Şüphede müdahale etmeme</h3><p>Yeterli güven oluşmazsa mesajın silinmesi yerine grupta kalması tercih edilir.</p></div></li>
-        <li><span>A5</span><div><h3>Özel bilgilendirme</h3><p>Silinen mesajın kuralı, puanı ve aktif toplamı yalnız mesaj sahibine özelden bildirilir.</p></div></li>
-        <li><span>A6</span><div><h3>Yerel kayıt ve gizlilik</h3><p>İnceleme kayıtları yönetim bilgisayarında tutulur; mesajlar ve kişisel kararlar GitHub’da yayımlanmaz.</p></div></li>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Mesaj gönderilir</h3><p>Koru yalnız hedef WhatsApp grubundaki yeni mesajları değerlendirir.</p></div></li>
+        <li><span>2</span><div><h3>Kural ve bağlam kontrol edilir</h3><p>Mesajın kendisi, yanıt verilen mesaj ve yakın konuşma akışı birlikte dikkate alınabilir.</p></div></li>
+        <li><span>3</span><div><h3>Gerekirse mesaj kaldırılır</h3><p>Kurala aykırı olduğu yeterince açık değilse Koru müdahale etmez.</p></div></li>
+        <li><span>4</span><div><h3>Sonuç özelden açıklanır</h3><p>Uygulanan kural, verilen puan ve son 30 gündeki toplam puan mesaj sahibine gönderilir.</p></div></li>
       </ol>
+
+      <div class="mistake-note">
+        <div class="note-icon" aria-hidden="true">!</div>
+        <div><h3>Otomatik kararlar hatalı olabilir</h3><p>Koru dikkatli davranacak şekilde tasarlanmıştır ve emin olmadığı durumda mesajı bırakır. Yine de her otomatik sistem gibi yanlış karar verebilir; her olayda insan müdahalesi veya düzeltme garantisi yoktur.</p></div>
+      </div>
     </section>
 
-    <section class="section section-tint" id="kurallar">
+    <section class="section section-soft" id="puanlar">
       <div class="shell">
-        <div class="section-heading split-heading">
-          <div><p class="eyebrow">K01–K21</p><h2>Kural kataloğu</h2></div>
-          <p>Koru önce kesin teknik kuralları uygular; anlam ve bağlam gereken durumlarda yalnız bu katalog içinde yapay zekâdan yardım alır. AI kaynaklı yaptırım için en az %95 güven gerekir.</p>
+        <div class="section-heading">
+          <p class="eyebrow">Mesaj silmek ve puan vermek aynı şey değildir</p>
+          <h2>Bir ihlal olursa ne olur?</h2>
+          <p class="section-intro">Bazı mesajlar grubu meşgul etmemesi için kaldırılır ama ilk seferde puan verilmez. Kişileri veya topluluk güvenliğini hedef alan davranışlar daha yüksek puan getirir.</p>
         </div>
-        <div class="rule-list" role="list">
-          <article role="listitem"><b>K01</b><div><h3>İçeriksiz selamlama ve kutlama</h3><p>Bilgi, soru veya eylem taşımayan salt selam ve temenniler. Önceki konuşmayı kapatan iyi geceler/kandil dileği korunur.</p></div><span>Sil · 0</span></article>
-          <article role="listitem"><b>K02</b><div><h3>Toplulukla ilgisiz içerik</h3><p>Site ve çevredeki ortak yaşamla makul ilgisi olmayan sosyal içerik.</p></div><span>AI · 0</span></article>
-          <article role="listitem"><b>K03</b><div><h3>Siyasi propaganda ve çatışma</h3><p>Taraf tutma, oy isteme, slogan ve siyasi tercihe göre hedef alma.</p></div><span>AI · +1</span></article>
-          <article role="listitem"><b>K04</b><div><h3>Dini veya ideolojik propaganda</h3><p>Vaaz, zincir mesaj ve ideolojik ikna; somut komşuluk duyuruları hariç.</p></div><span>AI · +1</span></article>
-          <article role="listitem"><b>K05</b><div><h3>Ticari reklam ve satış</h3><p>Site içindeki daire/otopark/depo için tekil komşuluk ilanı serbesttir; site dışı bireysel ilan +0, ticari veya ısrarlı profesyonel pazarlama +1.</p></div><span>AI · 0/+1</span></article>
-          <article role="listitem"><b>K06</b><div><h3>Dış bağış ve kampanya</h3><p>Toplulukla doğrudan ilgisi olmayan bağış, imza ve kampanya çağrıları.</p></div><span>AI · 0</span></article>
-          <article role="listitem"><b>K07</b><div><h3>Kişiye yönelik hakaret</h3><p>Kişinin zekâsını, karakterini veya insan değerini hedef alan saldırılar ile bir kişiyi hedef alan açıkça uygunsuz emoji ve tepkiler.</p></div><span>Hibrit · +2</span></article>
-          <article role="listitem"><b>K08</b><div><h3>Alay, küçümseme ve tahrik</h3><p>Hedefli iğneleme, aşağılama veya kavgayı kışkırtan söylem.</p></div><span>AI · +2</span></article>
-          <article role="listitem"><b>K09</b><div><h3>Israrlı hedef alma</h3><p>Aynı kişiye tekrar tekrar yönelme, etiketleme veya baskı kurma.</p></div><span>AI · +2</span></article>
-          <article role="listitem"><b>K10</b><div><h3>Tehdit ve yıldırma</h3><p>Fiziksel, ekonomik veya başka tür zarar tehdidi; ikinci AI doğrulaması gerekir.</p></div><span>AI · +5</span></article>
-          <article role="listitem"><b>K11</b><div><h3>Nefret ve ayrımcılık</h3><p>Kimliğe veya korunan bir özelliğe dayalı aşağılama ve saldırı; ikinci AI doğrulaması gerekir.</p></div><span>AI · +5</span></article>
-          <article role="listitem"><b>K12</b><div><h3>Ağır doğrulanamaz suçlama</h3><p>Hırsızlık, dolandırıcılık veya benzeri ciddi kişisel ithamlar.</p></div><span>AI · +2</span></article>
-          <article role="listitem"><b>K13</b><div><h3>Mahremiyet ihlali</h3><p>Gereksiz kişisel bilgi, adres, banka verisi veya özel görüntü paylaşımı.</p></div><span>AI · +2</span></article>
-          <article role="listitem"><b>K14</b><div><h3>Spam ve flood</h3><p>Tekrar, aşırı hız veya mesajı kötüye kullanacak biçimde parçalama.</p></div><span>Sil · +1</span></article>
-          <article role="listitem"><b>K15</b><div><h3>Dolandırıcılık ve zararlı içerik</h3><p>Phishing, sahte kampanya, zararlı dosya veya bağlantı; ikinci AI doğrulaması gerekir.</p></div><span>AI · +5</span></article>
-          <article role="listitem"><b>K16</b><div><h3>Moderasyondan kaçınma</h3><p>Yasağı sembol, görsel veya parçalama yoluyla bilinçli aşma; asıl ihlalin puanına +1 eklenir.</p></div><span>AI · +1 ek</span></article>
-          <article role="listitem"><b>K17</b><div><h3>Moderasyon tartışmasını gruba taşıma</h3><p>Karar ve kuralları grup trafiğinde meta-tartışmaya dönüştürme.</p></div><span>AI · 0</span></article>
-          <article role="listitem"><b>K18</b><div><h3>Format ve medya sınırları</h3><p>120 saniyeyi aşan sesli mesajlar silinir. Bir kişinin 30 dakikada beşten fazla sesli mesaj göndermesi spam kuralına girer.</p></div><span>Sil · 0</span></article>
-          <article role="listitem"><b>K19</b><div><h3>Bağlamsız veya yanıltıcı bağlantı</h3><p>Açıklamasız, kısa veya konu dışı yönlendirmeler.</p></div><span>AI · 0</span></article>
-          <article role="listitem"><b>K20</b><div><h3>Çatışmanın tırmanması</h3><p>İki farklı katılımcının karşılıklı geriliminde önce uyarı verilir; 5 dakika içinde sürerse grup 20 dakika soğutulur.</p></div><span>Uyarı → soğutma</span></article>
-          <article role="listitem"><b>K21</b><div><h3>Acil kanal kötüye kullanımı</h3><p>Acil bildirim mekanizmasını kasıtlı veya tekrarlı biçimde amacı dışında kullanma.</p></div><span>Sil · +2</span></article>
+
+        <div class="consequence-grid">
+          <article class="consequence neutral"><p class="consequence-value">0 puan</p><h3>Mesaj kaldırılabilir</h3><p>İçeriksiz selamlama, konu dışı paylaşım veya çok uzun ses kaydı gibi düşük etkili ihlaller.</p></article>
+          <article class="consequence amber"><p class="consequence-value">+1 puan</p><h3>Tekrar veya grup düzeni</h3><p>Spam, siyasi/dini propaganda veya puansız aynı kuralın 30 gün içinde dördüncü tekrarı.</p></article>
+          <article class="consequence orange"><p class="consequence-value">+2 puan</p><h3>Bir kişiyi hedef alma</h3><p>Hakaret, aşağılama, ısrarlı hedef alma, mahremiyet ihlali veya acil kanalı kötüye kullanma.</p></article>
+          <article class="consequence red"><p class="consequence-value">+5 puan</p><h3>Doğrudan çıkarma</h3><p>Tehdit, nefret ve ayrımcılık ya da dolandırıcılık ve zararlı bağlantı.</p></article>
         </div>
-        <div class="point-note"><strong>Puanlar nasıl işler?</strong><p>Puanlar 30 gün aktiftir; toplam 5 puana ulaşan üye gruptan çıkarılır. Normalde 0 puan olan aynı kuralın 30 gün içindeki dördüncü tekrarı +1 puan getirir. Koru, iki sağlayıcı da kullanılamazsa AI gerektiren mesajlarda müdahale etmeden devam eder.</p></div>
-        <p class="machine-link"><a href="ruleset.json">Makine tarafından okunabilir politika ve SHA-256 özeti →</a></p>
+
+        <div class="threshold">
+          <div class="threshold-number">5</div>
+          <div><h3>Son 30 günde toplam 5 puan</h3><p>Üye gruptan çıkarılır. Normal ihlaller nedeniyle çıkarılan kişi 30 gün sonra yeniden başvurabilir.</p></div>
+        </div>
       </div>
     </section>
 
-    <section class="section shell" id="topluluk-guvenligi">
-      <div class="section-heading split-heading">
-        <div><p class="eyebrow">Topluluk güvenliği</p><h2>Anonim şikâyet ve üyelik başvurusu</h2></div>
-        <p>Şikâyetçi kimliği hedef kişiye veya gruba açıklanmaz. Aynı kişinin tekrarlanan şikâyetleri eşiği yapay biçimde yükseltemez.</p>
+    <section class="section shell" id="kurallar">
+      <div class="section-heading">
+        <p class="eyebrow">Tam liste</p>
+        <h2>Grup kuralları ve sonuçları</h2>
+        <p class="section-intro">Aşağıdaki başlıkları açarak ayrıntıları görebilirsiniz. “Mesaj kaldırılır” ifadesi, mesajın WhatsApp grubundan silineceği anlamına gelir.</p>
       </div>
-      <div class="notice"><strong>Şikâyet eşiği</strong><span>Yedi günde aynı hedef için kişi başına yalnız bir kayıt sayılır. Üç farklı mevcut üyede özel uyarı, beş farklı mevcut üyede çıkarma uygulanır ve gruba olay detayı olmadan genel sebep yazılır.</span></div>
-      <p>Üye ekleme Koru’da toplanır. Katılmak isteyen kişi Koru’ya kendi WhatsApp hesabından <strong>katıl</strong> yazar; Ad Soyad, Blok ve Daire No bilgilerini tamamlar ve bu sayfadaki koşulları onaylar. Koru ardından kişiyi gruba ekler. Bu işlem kimlik garantisi değil, kayıt ve caydırıcılık kontrolüdür.</p>
-      <p>Normal puan eşiğiyle çıkarılan kişi 30 gün sonra yeniden başvurabilir. Taciz, tehdit, istenmeyen özel mesaj veya site sakini olmama gibi topluluk güvenliği nedenleriyle çıkarılan hesap otomatik olarak yeniden alınmaz.</p>
+
+      <div class="rule-groups">
+        <details>
+          <summary><span><b>Grubu kullanışlı tutan kurallar</b><small>Selamlama, konu dışı içerik, reklam, spam ve medya sınırları</small></span><span class="summary-action">Aç</span></summary>
+          <div class="rule-table">
+            <article><span class="rule-id">K01</span><div><h3>Yalnız selamlama veya kutlama</h3><p>Bilgi, soru ya da eylem içermeyen tek başına “merhaba”, kutlama ve temenni mesajları. Önceki konuşmayı kapatan iyi geceler veya kandil dileği korunur.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
+            <article><span class="rule-id">K02</span><div><h3>Grubun konusu dışında içerik</h3><p>Site, yakın çevre veya ortak komşuluk yaşamıyla makul ilgisi olmayan paylaşımlar.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
+            <article><span class="rule-id">K03</span><div><h3>Siyasi propaganda</h3><p>Oy isteme, slogan, taraf tutma veya siyasi tercihi nedeniyle birini hedef alma.</p></div><strong>Mesaj kaldırılır · +1 puan</strong></article>
+            <article><span class="rule-id">K04</span><div><h3>Dini veya ideolojik propaganda</h3><p>Vaaz, zincir mesaj ve ikna amaçlı paylaşım. Somut komşuluk duyuruları bunun dışındadır.</p></div><strong>Mesaj kaldırılır · +1 puan</strong></article>
+            <article><span class="rule-id">K05</span><div><h3>Reklam ve satış</h3><p>Site içindeki daire, otopark veya depo için tekil komşuluk ilanı serbesttir. Site dışı bireysel ilan puansız kaldırılabilir; ticari veya ısrarlı profesyonel reklam +1 puandır.</p></div><strong>Mesaj kaldırılabilir · 0 / +1 puan</strong></article>
+            <article><span class="rule-id">K06</span><div><h3>Dış bağış ve kampanya</h3><p>Toplulukla doğrudan ilgisi olmayan bağış, imza veya kampanya çağrıları.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
+            <article><span class="rule-id">K14</span><div><h3>Spam ve flood</h3><p>Aynı içeriği tekrarlama, 60 saniyede 10'dan fazla mesaj veya mesajı gereksiz biçimde parçalara bölme.</p></div><strong>Mesaj kaldırılır · +1 puan</strong></article>
+            <article><span class="rule-id">K17</span><div><h3>Moderasyon tartışmasını gruba taşıma</h3><p>Koru'nun kararını grup trafiğinde uzayan bir tartışmaya dönüştürme.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
+            <article><span class="rule-id">K18</span><div><h3>Sesli mesaj sınırları</h3><p>120 saniyeyi aşan sesli mesajlar kaldırılır. Bir kişinin 30 dakikada beşten fazla sesli mesajı spam sayılır.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
+            <article><span class="rule-id">K19</span><div><h3>Açıklamasız veya yanıltıcı bağlantı</h3><p>Nereye gittiği ya da grupla ilgisi anlaşılmayan bağlantılar.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
+          </div>
+        </details>
+
+        <details>
+          <summary><span><b>Kişileri ve güvenliği koruyan kurallar</b><small>Hakaret, tehdit, mahremiyet ve zararlı içerik</small></span><span class="summary-action">Aç</span></summary>
+          <div class="rule-table">
+            <article><span class="rule-id">K07</span><div><h3>Kişiye yönelik hakaret</h3><p>Bir kişinin zekâsını, karakterini veya insan değerini hedef alan saldırılar ile kişiyi hedef alan açıkça uygunsuz emoji ve tepkiler.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
+            <article><span class="rule-id">K08</span><div><h3>Alay, küçümseme ve tahrik</h3><p>Bir kişiye yöneltilen iğneleme, aşağılama veya kavgayı kışkırtan sözler.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
+            <article><span class="rule-id">K09</span><div><h3>Israrlı hedef alma</h3><p>Aynı kişiye tekrar tekrar yönelme, etiketleme veya baskı kurma.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
+            <article><span class="rule-id">K10</span><div><h3>Tehdit ve yıldırma</h3><p>Fiziksel, ekonomik veya başka tür zarar verme tehdidi.</p></div><strong>Mesaj kaldırılır · +5 puan</strong></article>
+            <article><span class="rule-id">K11</span><div><h3>Nefret ve ayrımcılık</h3><p>Kimliği veya korunan bir özelliği nedeniyle bir kişiyi ya da grubu aşağılama ve hedef alma.</p></div><strong>Mesaj kaldırılır · +5 puan</strong></article>
+            <article><span class="rule-id">K12</span><div><h3>Ağır ve doğrulanamayan suçlama</h3><p>Bir kişiye hırsızlık, dolandırıcılık veya benzeri ciddi bir suç isnat etme.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
+            <article><span class="rule-id">K13</span><div><h3>Mahremiyet ihlali</h3><p>Gereksiz kişisel bilgi, açık adres, banka verisi veya özel görüntü paylaşma. Bir iletişim bilgisini yalnızca sormak bu kapsamda değildir.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
+            <article><span class="rule-id">K15</span><div><h3>Dolandırıcılık ve zararlı içerik</h3><p>Sahte kampanya, kimlik avı, zararlı dosya veya bağlantı.</p></div><strong>Mesaj kaldırılır · +5 puan</strong></article>
+            <article><span class="rule-id">K16</span><div><h3>Kuraldan kaçınmaya çalışma</h3><p>Bir yasağı sembol, görsel veya mesajı parçalama yoluyla bilinçli biçimde aşmaya çalışma.</p></div><strong>Asıl ihlale +1 puan eklenir</strong></article>
+            <article><span class="rule-id">K21</span><div><h3>Acil bildirim kanalını kötüye kullanma</h3><p>Acil duyuru özelliğini kasıtlı veya tekrarlı biçimde amacı dışında kullanma.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
+          </div>
+        </details>
+
+        <details>
+          <summary><span><b>Tartışma büyürse</b><small>Koru önce uyarır; tartışma sürerse grubu geçici olarak sakinleştirir</small></span><span class="summary-action">Aç</span></summary>
+          <div class="conflict-rule-intro"><span class="rule-id">K20</span><p><strong>Çatışma tırmanması</strong> Birden fazla kişinin karşılıklı sertleştiği ve konuşmanın büyüdüğü durumlarda aşağıdaki süreç uygulanır. Bu kural kişilere puan vermek için değil, grubu sakinleştirmek içindir.</p></div>
+          <div class="conflict-flow">
+            <div><span>1</span><p><strong>Uyarı</strong>Koru tartışmanın tırmandığını bildirir ve özelden devam edilmesini ister.</p></div>
+            <div><span>2</span><p><strong>20 dakika kapanma</strong>Uyarıdan sonra 5 dakika içinde tartışma sürerse yalnız yöneticiler yazabilir.</p></div>
+            <div><span>3</span><p><strong>60 dakika kapanma</strong>Aynı gün yeniden tırmanan tartışmada daha uzun sakinleşme süresi uygulanabilir.</p></div>
+          </div>
+        </details>
+      </div>
     </section>
 
-    <section class="section shell" id="kararlar">
-      <div class="section-heading split-heading">
-        <div><p class="eyebrow">Kişisel bilgi</p><h2>Kendi durumunuzu Koru’dan öğrenin</h2></div>
-        <p>Bu GitHub sayfası canlı moderasyon günlüğü değildir. Kişisel kararlar ve mesaj içerikleri burada yayımlanmaz.</p>
+    <section class="section section-soft" id="uyelik">
+      <div class="shell two-column">
+        <div>
+          <p class="eyebrow">Üyelik ve şikâyet</p>
+          <h2>Gruba kimler, nasıl katılır?</h2>
+          <ol class="join-list">
+            <li>Koru'ya özelden <strong>katıl</strong> yazılır.</li>
+            <li>Ad Soyad, Blok ve Daire No paylaşılır.</li>
+            <li>Bu sayfadaki koşullar <strong>onay</strong> yazarak kabul edilir.</li>
+            <li>Koru kişiyi gruba ekler veya 15 dakikalık kişisel davet bağlantısı gönderir.</li>
+          </ol>
+          <p class="small-note">Bu kayıt bir kimlik garantisi değildir; yanlış bilgi verme ihtimaline karşı temel bir kontrol ve caydırıcılık sağlar.</p>
+        </div>
+        <div class="complaint-card">
+          <h3>Özel mesajla rahatsız edilme gibi durumlar</h3>
+          <p>Mevcut grup üyeleri Koru'ya özelden şikâyet gönderebilir. Şikâyetçinin kimliği gizli tutulur.</p>
+          <dl>
+            <div><dt>3 farklı geçerli şikâyet</dt><dd>Kişiye özel uyarı</dd></div>
+            <div><dt>5 farklı geçerli şikâyet</dt><dd>Gruptan çıkarma</dd></div>
+          </dl>
+          <p>Aynı kişinin tekrarlanan şikâyeti yalnız bir kez sayılır. Taciz, tehdit, istenmeyen özel mesaj veya site sakini olmama nedeniyle çıkarılan hesap otomatik olarak yeniden alınmaz.</p>
+        </div>
       </div>
-      <div class="command-grid">
-        <article><code>durum</code><p>Son 30 gündeki aktif puanınızı ve ihlal sayınızı gösterir.</p></article>
-        <article><code>kararlar</code><p>Size ait son moderasyon kararlarını tarih, kural ve puan bilgisiyle gösterir.</p></article>
-        <article><code>kurallar</code><p>Bu sayfanın güncel bağlantısını gönderir.</p></article>
-      </div>
-      <p>Koru’ya WhatsApp’tan özel mesaj gönderip komutu yazmanız yeterlidir. Bir mesaj silindiğinde sebep, kural ve güncel puan toplamı ayrıca özelden iletilir. Ayrıntılı yönetim kayıtları yalnız yetkili incelemesi için yerel olarak saklanır.</p>
     </section>
 
-    <section class="section section-dark" id="gizlilik">
-      <div class="shell privacy-grid">
-        <div><p class="eyebrow">Veri minimizasyonu</p><h2>Kurallar açık, kişisel iletişim özeldir.</h2></div>
-        <div><p>Bu sayfa kuralları ve sistemin çalışma biçimini gösterir. Mesaj içeriği, kişisel kararlar, şikâyetçi kimliği ve üyelik başvurusu bilgileri GitHub’a gönderilmez.</p><ul><li>Sayfada form, çerez veya kullanıcı takibi yoktur.</li><li>AI gereken değerlendirmelerde yurt dışındaki Groq ve gerektiğinde Cloudflare sunucuları kullanılabilir.</li><li>Ham mesaj içeriği yerel kayıtlarda 45 gün sonra redakte edilir; karar ve puan bilgisi korunur.</li></ul></div>
+    <section class="section shell" id="gizlilik">
+      <div class="section-heading"><p class="eyebrow">Gizlilik</p><h2>Mesajlarınız nerede işlenir?</h2></div>
+      <div class="privacy-list">
+        <article><span aria-hidden="true">01</span><div><h3>Kural kontrolü</h3><p>Kesin teknik sınırlar Koru'nun çalıştığı bilgisayarda kontrol edilir. Anlam ve bağlam gereken bazı mesajlar Groq, hizmet veremezse Cloudflare üzerinden değerlendirilebilir; bu servislerin sunucuları yurt dışındadır.</p></div></article>
+        <article><span aria-hidden="true">02</span><div><h3>Yerel kayıt</h3><p>İnceleme ve sistem güvenliği için mesajlar ile kararlar yönetim bilgisayarında kaydedilir. Ham mesaj içeriği 45 gün sonra redakte edilir; kural ve puan geçmişi korunur.</p></div></article>
+        <article><span aria-hidden="true">03</span><div><h3>Herkese açık olmayan kararlar</h3><p>Mesajlarınız, kimliğiniz ve kişisel moderasyon kararlarınız bu GitHub sayfasında yayımlanmaz. Burada yalnız kurallar ve bunların değişiklik geçmişi bulunur.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section account-section" id="durum">
+      <div class="shell account-box">
+        <div><p class="eyebrow">Yalnız size görünür</p><h2>Kendi puanınızı ve kararlarınızı öğrenin</h2><p>Koru'ya WhatsApp'tan özel mesaj gönderip aşağıdaki kelimelerden birini yazmanız yeterlidir.</p></div>
+        <div class="commands">
+          <div><code>durum</code><span>Son 30 gündeki puan ve ihlal sayısı</span></div>
+          <div><code>kararlar</code><span>Size ait son kararlar</span></div>
+          <div><code>kurallar</code><span>Bu sayfanın bağlantısı</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="shell final-box">
+        <p class="eyebrow">Katılmaya hazırsanız</p>
+        <h2>WhatsApp'a dönüp <strong>onay</strong> yazın</h2>
+        <p>Böylece bu sayfadaki grup kurallarını, otomatik yönetimi ve açıklanan veri kullanımını kabul etmiş olursunuz.</p>
+        <a class="primary-button light" href="https://wa.me/905527686890?text=onay">Koru ile WhatsApp'a dön</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="shell footer-row"><span>Koru • Komşu Asistanı · 1.7 pilot production</span><a href="https://github.com/alpertecimer/site-moderator-transparency">Kuralların sürüm geçmişi</a></div>
+    <div class="shell footer-row">
+      <span>Koru • Komşu Asistanı</span>
+      <div><a href="ruleset.json">Teknik politika dosyası</a><a href="https://github.com/alpertecimer/site-moderator-transparency">Değişiklik geçmişi</a></div>
+    </div>
   </footer>
 </body>
 </html>
