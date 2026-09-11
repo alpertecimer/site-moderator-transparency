@@ -113,6 +113,7 @@ details[open] .summary-action::after { content: "Kapat"; font-size: 14px; }
 .commands { display: grid; gap: 9px; }
 .commands div { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 15px; border: 1px solid rgba(255,255,255,.16); border-radius: 10px; background: rgba(255,255,255,.08); }
 .commands code { color: #ffd782; font: 800 16px ui-monospace, monospace; }
+.commands strong { color: #ffd782; font-size: 15px; }
 .commands span { color: #dce9f1; font-size: 14px; text-align: right; }
 
 .final-section { padding: 62px 0; background: var(--amber); }
