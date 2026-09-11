@@ -30,8 +30,8 @@
           <h1>Gruba katılmadan önce bilmeniz gerekenler</h1>
           <p class="lead"><strong>Koru</strong>, komşu grubunun kurallarını otomatik uygulayan WhatsApp asistanıdır. İnsan bir yönetici her mesajı tek tek onaylamaz.</p>
           <div class="plain-summary">
-            <p>Koru, kurala aykırı bir mesajı <strong>gruptan kaldırabilir</strong> ve gerektiğinde <strong>puan verebilir</strong>.</p>
-            <p>Bir mesaj kaldırılırsa sebebi ve güncel puanınız <strong>yalnız size özelden</strong> bildirilir.</p>
+            <p>Koru, kurala aykırı bir mesajı <strong>gruptan kaldırabilir</strong> ve gerektiğinde <strong>ihlal puanı ekleyebilir</strong>.</p>
+            <p>Bir mesaj kaldırılırsa sebebi ve güncel ihlal puanınız <strong>yalnız size özelden</strong> bildirilir.</p>
           </div>
           <a class="primary-button" href="#ozet">Nasıl çalıştığını öğren</a>
         </div>
@@ -58,7 +58,7 @@
         <li><span>1</span><div><h3>Mesaj gönderilir</h3><p>Koru yalnız hedef WhatsApp grubundaki yeni mesajları değerlendirir.</p></div></li>
         <li><span>2</span><div><h3>Kural ve bağlam kontrol edilir</h3><p>Mesajın kendisi, yanıt verilen mesaj ve yakın konuşma akışı birlikte dikkate alınabilir.</p></div></li>
         <li><span>3</span><div><h3>Gerekirse mesaj kaldırılır</h3><p>Kurala aykırı olduğu yeterince açık değilse Koru müdahale etmez.</p></div></li>
-        <li><span>4</span><div><h3>Sonuç özelden açıklanır</h3><p>Uygulanan kural, verilen puan ve son 30 gündeki toplam puan mesaj sahibine gönderilir.</p></div></li>
+        <li><span>4</span><div><h3>Sonuç özelden açıklanır</h3><p>Uygulanan kural, eklenen ihlal puanı ve son 30 gündeki toplam ihlal puanı mesaj sahibine gönderilir.</p></div></li>
       </ol>
 
       <div class="mistake-note">
@@ -70,21 +70,21 @@
     <section class="section section-soft" id="puanlar">
       <div class="shell">
         <div class="section-heading">
-          <p class="eyebrow">Mesaj silmek ve puan vermek aynı şey değildir</p>
+          <p class="eyebrow">Mesaj kaldırmak ve ihlal puanı eklemek aynı şey değildir</p>
           <h2>Bir ihlal olursa ne olur?</h2>
-          <p class="section-intro">Bazı mesajlar grubu meşgul etmemesi için kaldırılır ama ilk seferde puan verilmez. Kişileri veya topluluk güvenliğini hedef alan davranışlar daha yüksek puan getirir.</p>
+          <p class="section-intro">Bazı mesajlar grubu meşgul etmemesi için kaldırılır ama ilk seferde ihlal puanı eklenmez. Kişileri veya topluluk güvenliğini hedef alan davranışlara daha yüksek ihlal puanı eklenir.</p>
         </div>
 
         <div class="consequence-grid">
-          <article class="consequence neutral"><p class="consequence-value">0 puan</p><h3>Mesaj kaldırılabilir</h3><p>İçeriksiz selamlama, konu dışı paylaşım veya çok uzun ses kaydı gibi düşük etkili ihlaller.</p></article>
-          <article class="consequence amber"><p class="consequence-value">+1 puan</p><h3>Tekrar veya grup düzeni</h3><p>Spam, siyasi/dini propaganda veya puansız aynı kuralın 30 gün içinde dördüncü tekrarı.</p></article>
-          <article class="consequence orange"><p class="consequence-value">+2 puan</p><h3>Bir kişiyi hedef alma</h3><p>Hakaret, aşağılama, ısrarlı hedef alma, mahremiyet ihlali veya acil kanalı kötüye kullanma.</p></article>
-          <article class="consequence red"><p class="consequence-value">+5 puan</p><h3>Doğrudan çıkarma</h3><p>Tehdit, nefret ve ayrımcılık ya da dolandırıcılık ve zararlı bağlantı.</p></article>
+          <article class="consequence neutral"><p class="consequence-value">İhlal puanı yok</p><h3>Mesaj kaldırılabilir</h3><p>İçeriksiz selamlama, konu dışı paylaşım veya çok uzun ses kaydı gibi düşük etkili ihlaller.</p></article>
+          <article class="consequence amber"><p class="consequence-value">+1 ihlal puanı</p><h3>Tekrar veya grup düzeni</h3><p>Spam, siyasi/dini propaganda veya normalde ihlal puanı eklenmeyen aynı kuralın 30 gün içinde dördüncü tekrarı.</p></article>
+          <article class="consequence orange"><p class="consequence-value">+2 ihlal puanı</p><h3>Bir kişiyi hedef alma</h3><p>Hakaret, aşağılama, ısrarlı hedef alma, mahremiyet ihlali veya acil kanalı kötüye kullanma.</p></article>
+          <article class="consequence red"><p class="consequence-value">+5 ihlal puanı</p><h3>Doğrudan çıkarma</h3><p>Tehdit, nefret ve ayrımcılık ya da dolandırıcılık ve zararlı bağlantı.</p></article>
         </div>
 
         <div class="threshold">
           <div class="threshold-number">5</div>
-          <div><h3>Son 30 günde toplam 5 puan</h3><p>Üye gruptan çıkarılır. Normal ihlaller nedeniyle çıkarılan kişi 30 gün sonra yeniden başvurabilir.</p></div>
+          <div><h3>Son 30 günde toplam 5 ihlal puanı</h3><p>Üye gruptan çıkarılır. Normal ihlaller nedeniyle çıkarılan kişi 30 gün sonra yeniden başvurabilir.</p></div>
         </div>
       </div>
     </section>
@@ -100,38 +100,38 @@
         <details>
           <summary><span><b>Grubu kullanışlı tutan kurallar</b><small>Selamlama, konu dışı içerik, reklam, spam ve medya sınırları</small></span><span class="summary-action">Aç</span></summary>
           <div class="rule-table">
-            <article><span class="rule-id">K01</span><div><h3>Yalnız selamlama veya kutlama</h3><p>Bilgi, soru ya da eylem içermeyen tek başına “merhaba”, kutlama ve temenni mesajları. Önceki konuşmayı kapatan iyi geceler veya kandil dileği korunur.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
-            <article><span class="rule-id">K02</span><div><h3>Grubun konusu dışında içerik</h3><p>Site, yakın çevre veya ortak komşuluk yaşamıyla makul ilgisi olmayan paylaşımlar.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
-            <article><span class="rule-id">K03</span><div><h3>Siyasi propaganda</h3><p>Oy isteme, slogan, taraf tutma veya siyasi tercihi nedeniyle birini hedef alma.</p></div><strong>Mesaj kaldırılır · +1 puan</strong></article>
-            <article><span class="rule-id">K04</span><div><h3>Dini veya ideolojik propaganda</h3><p>Vaaz, zincir mesaj ve ikna amaçlı paylaşım. Somut komşuluk duyuruları bunun dışındadır.</p></div><strong>Mesaj kaldırılır · +1 puan</strong></article>
-            <article><span class="rule-id">K05</span><div><h3>Reklam ve satış</h3><p>Site içindeki daire, otopark veya depo için tekil komşuluk ilanı serbesttir. Site dışı bireysel ilan puansız kaldırılabilir; ticari veya ısrarlı profesyonel reklam +1 puandır.</p></div><strong>Mesaj kaldırılabilir · 0 / +1 puan</strong></article>
-            <article><span class="rule-id">K06</span><div><h3>Dış bağış ve kampanya</h3><p>Toplulukla doğrudan ilgisi olmayan bağış, imza veya kampanya çağrıları.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
-            <article><span class="rule-id">K14</span><div><h3>Spam ve flood</h3><p>Aynı içeriği tekrarlama, 60 saniyede 10'dan fazla mesaj veya mesajı gereksiz biçimde parçalara bölme.</p></div><strong>Mesaj kaldırılır · +1 puan</strong></article>
-            <article><span class="rule-id">K17</span><div><h3>Moderasyon tartışmasını gruba taşıma</h3><p>Koru'nun kararını grup trafiğinde uzayan bir tartışmaya dönüştürme.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
-            <article><span class="rule-id">K18</span><div><h3>Sesli mesaj sınırları</h3><p>120 saniyeyi aşan sesli mesajlar kaldırılır. Bir kişinin 30 dakikada beşten fazla sesli mesajı spam sayılır.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
-            <article><span class="rule-id">K19</span><div><h3>Açıklamasız veya yanıltıcı bağlantı</h3><p>Nereye gittiği ya da grupla ilgisi anlaşılmayan bağlantılar.</p></div><strong>Mesaj kaldırılır · 0 puan</strong></article>
+            <article><span class="rule-id">K01</span><div><h3>Yalnız selamlama veya kutlama</h3><p>Bilgi, soru ya da eylem içermeyen tek başına “merhaba”, kutlama ve temenni mesajları. Önceki konuşmayı kapatan iyi geceler veya kandil dileği korunur.</p></div><strong>Mesaj kaldırılır · İhlal puanı yok</strong></article>
+            <article><span class="rule-id">K02</span><div><h3>Grubun konusu dışında içerik</h3><p>Site, yakın çevre veya ortak komşuluk yaşamıyla makul ilgisi olmayan paylaşımlar.</p></div><strong>Mesaj kaldırılır · İhlal puanı yok</strong></article>
+            <article><span class="rule-id">K03</span><div><h3>Siyasi propaganda</h3><p>Oy isteme, slogan, taraf tutma veya siyasi tercihi nedeniyle birini hedef alma.</p></div><strong>Mesaj kaldırılır · +1 ihlal puanı</strong></article>
+            <article><span class="rule-id">K04</span><div><h3>Dini veya ideolojik propaganda</h3><p>Vaaz, zincir mesaj ve ikna amaçlı paylaşım. Somut komşuluk duyuruları bunun dışındadır.</p></div><strong>Mesaj kaldırılır · +1 ihlal puanı</strong></article>
+            <article><span class="rule-id">K05</span><div><h3>Reklam ve satış</h3><p>Site içindeki daire, otopark veya depo için tekil komşuluk ilanı serbesttir. Site dışı bireysel ilan ihlal puanı eklenmeden kaldırılabilir; ticari veya ısrarlı profesyonel reklama +1 ihlal puanı eklenir.</p></div><strong>Mesaj kaldırılabilir · İhlal puanı yok / +1</strong></article>
+            <article><span class="rule-id">K06</span><div><h3>Dış bağış ve kampanya</h3><p>Toplulukla doğrudan ilgisi olmayan bağış, imza veya kampanya çağrıları.</p></div><strong>Mesaj kaldırılır · İhlal puanı yok</strong></article>
+            <article><span class="rule-id">K14</span><div><h3>Spam ve flood</h3><p>Aynı içeriği tekrarlama, 60 saniyede 10'dan fazla mesaj veya mesajı gereksiz biçimde parçalara bölme.</p></div><strong>Mesaj kaldırılır · +1 ihlal puanı</strong></article>
+            <article><span class="rule-id">K17</span><div><h3>Moderasyon tartışmasını gruba taşıma</h3><p>Koru'nun kararını grup trafiğinde uzayan bir tartışmaya dönüştürme.</p></div><strong>Mesaj kaldırılır · İhlal puanı yok</strong></article>
+            <article><span class="rule-id">K18</span><div><h3>Sesli mesaj sınırları</h3><p>120 saniyeyi aşan sesli mesajlar kaldırılır. Bir kişinin 30 dakikada beşten fazla sesli mesajı spam sayılır.</p></div><strong>Mesaj kaldırılır · İhlal puanı yok</strong></article>
+            <article><span class="rule-id">K19</span><div><h3>Açıklamasız veya yanıltıcı bağlantı</h3><p>Nereye gittiği ya da grupla ilgisi anlaşılmayan bağlantılar.</p></div><strong>Mesaj kaldırılır · İhlal puanı yok</strong></article>
           </div>
         </details>
 
         <details>
           <summary><span><b>Kişileri ve güvenliği koruyan kurallar</b><small>Hakaret, tehdit, mahremiyet ve zararlı içerik</small></span><span class="summary-action">Aç</span></summary>
           <div class="rule-table">
-            <article><span class="rule-id">K07</span><div><h3>Kişiye yönelik hakaret</h3><p>Bir kişinin zekâsını, karakterini veya insan değerini hedef alan saldırılar ile kişiyi hedef alan açıkça uygunsuz emoji ve tepkiler.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
-            <article><span class="rule-id">K08</span><div><h3>Alay, küçümseme ve tahrik</h3><p>Bir kişiye yöneltilen iğneleme, aşağılama veya kavgayı kışkırtan sözler.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
-            <article><span class="rule-id">K09</span><div><h3>Israrlı hedef alma</h3><p>Aynı kişiye tekrar tekrar yönelme, etiketleme veya baskı kurma.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
-            <article><span class="rule-id">K10</span><div><h3>Tehdit ve yıldırma</h3><p>Fiziksel, ekonomik veya başka tür zarar verme tehdidi.</p></div><strong>Mesaj kaldırılır · +5 puan</strong></article>
-            <article><span class="rule-id">K11</span><div><h3>Nefret ve ayrımcılık</h3><p>Kimliği veya korunan bir özelliği nedeniyle bir kişiyi ya da grubu aşağılama ve hedef alma.</p></div><strong>Mesaj kaldırılır · +5 puan</strong></article>
-            <article><span class="rule-id">K12</span><div><h3>Ağır ve doğrulanamayan suçlama</h3><p>Bir kişiye hırsızlık, dolandırıcılık veya benzeri ciddi bir suç isnat etme.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
-            <article><span class="rule-id">K13</span><div><h3>Mahremiyet ihlali</h3><p>Gereksiz kişisel bilgi, açık adres, banka verisi veya özel görüntü paylaşma. Bir iletişim bilgisini yalnızca sormak bu kapsamda değildir.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
-            <article><span class="rule-id">K15</span><div><h3>Dolandırıcılık ve zararlı içerik</h3><p>Sahte kampanya, kimlik avı, zararlı dosya veya bağlantı.</p></div><strong>Mesaj kaldırılır · +5 puan</strong></article>
-            <article><span class="rule-id">K16</span><div><h3>Kuraldan kaçınmaya çalışma</h3><p>Bir yasağı sembol, görsel veya mesajı parçalama yoluyla bilinçli biçimde aşmaya çalışma.</p></div><strong>Asıl ihlale +1 puan eklenir</strong></article>
-            <article><span class="rule-id">K21</span><div><h3>Acil bildirim kanalını kötüye kullanma</h3><p>Acil duyuru özelliğini kasıtlı veya tekrarlı biçimde amacı dışında kullanma.</p></div><strong>Mesaj kaldırılır · +2 puan</strong></article>
+            <article><span class="rule-id">K07</span><div><h3>Kişiye yönelik hakaret</h3><p>Bir kişinin zekâsını, karakterini veya insan değerini hedef alan saldırılar ile kişiyi hedef alan açıkça uygunsuz emoji ve tepkiler.</p></div><strong>Mesaj kaldırılır · +2 ihlal puanı</strong></article>
+            <article><span class="rule-id">K08</span><div><h3>Alay, küçümseme ve tahrik</h3><p>Bir kişiye yöneltilen iğneleme, aşağılama veya kavgayı kışkırtan sözler.</p></div><strong>Mesaj kaldırılır · +2 ihlal puanı</strong></article>
+            <article><span class="rule-id">K09</span><div><h3>Israrlı hedef alma</h3><p>Aynı kişiye tekrar tekrar yönelme, etiketleme veya baskı kurma.</p></div><strong>Mesaj kaldırılır · +2 ihlal puanı</strong></article>
+            <article><span class="rule-id">K10</span><div><h3>Tehdit ve yıldırma</h3><p>Fiziksel, ekonomik veya başka tür zarar verme tehdidi.</p></div><strong>Mesaj kaldırılır · +5 ihlal puanı</strong></article>
+            <article><span class="rule-id">K11</span><div><h3>Nefret ve ayrımcılık</h3><p>Kimliği veya korunan bir özelliği nedeniyle bir kişiyi ya da grubu aşağılama ve hedef alma.</p></div><strong>Mesaj kaldırılır · +5 ihlal puanı</strong></article>
+            <article><span class="rule-id">K12</span><div><h3>Ağır ve doğrulanamayan suçlama</h3><p>Bir kişiye hırsızlık, dolandırıcılık veya benzeri ciddi bir suç isnat etme.</p></div><strong>Mesaj kaldırılır · +2 ihlal puanı</strong></article>
+            <article><span class="rule-id">K13</span><div><h3>Mahremiyet ihlali</h3><p>Gereksiz kişisel bilgi, açık adres, banka verisi veya özel görüntü paylaşma. Bir iletişim bilgisini yalnızca sormak bu kapsamda değildir.</p></div><strong>Mesaj kaldırılır · +2 ihlal puanı</strong></article>
+            <article><span class="rule-id">K15</span><div><h3>Dolandırıcılık ve zararlı içerik</h3><p>Sahte kampanya, kimlik avı, zararlı dosya veya bağlantı.</p></div><strong>Mesaj kaldırılır · +5 ihlal puanı</strong></article>
+            <article><span class="rule-id">K16</span><div><h3>Kuraldan kaçınmaya çalışma</h3><p>Bir yasağı sembol, görsel veya mesajı parçalama yoluyla bilinçli biçimde aşmaya çalışma.</p></div><strong>Asıl ihlale +1 ihlal puanı eklenir</strong></article>
+            <article><span class="rule-id">K21</span><div><h3>Acil bildirim kanalını kötüye kullanma</h3><p>Acil duyuru özelliğini kasıtlı veya tekrarlı biçimde amacı dışında kullanma.</p></div><strong>Mesaj kaldırılır · +2 ihlal puanı</strong></article>
           </div>
         </details>
 
         <details>
           <summary><span><b>Tartışma büyürse</b><small>Koru önce uyarır; tartışma sürerse grubu geçici olarak sakinleştirir</small></span><span class="summary-action">Aç</span></summary>
-          <div class="conflict-rule-intro"><span class="rule-id">K20</span><p><strong>Çatışma tırmanması</strong> Birden fazla kişinin karşılıklı sertleştiği ve konuşmanın büyüdüğü durumlarda aşağıdaki süreç uygulanır. Bu kural kişilere puan vermek için değil, grubu sakinleştirmek içindir.</p></div>
+          <div class="conflict-rule-intro"><span class="rule-id">K20</span><p><strong>Çatışma tırmanması</strong> Birden fazla kişinin karşılıklı sertleştiği ve konuşmanın büyüdüğü durumlarda aşağıdaki süreç uygulanır. Bu kural kişilere ihlal puanı eklemek için değil, grubu sakinleştirmek içindir.</p></div>
           <div class="conflict-flow">
             <div><span>1</span><p><strong>Uyarı</strong>Koru tartışmanın tırmandığını bildirir ve özelden devam edilmesini ister.</p></div>
             <div><span>2</span><p><strong>20 dakika kapanma</strong>Uyarıdan sonra 5 dakika içinde tartışma sürerse yalnız yöneticiler yazabilir.</p></div>
@@ -170,16 +170,16 @@
       <div class="section-heading"><p class="eyebrow">Gizlilik</p><h2>Mesajlarınız nerede işlenir?</h2></div>
       <div class="privacy-list">
         <article><span aria-hidden="true">01</span><div><h3>Kural kontrolü</h3><p>Kesin teknik sınırlar Koru'nun çalıştığı bilgisayarda kontrol edilir. Anlam ve bağlam gereken bazı mesajlar Groq, hizmet veremezse Cloudflare üzerinden değerlendirilebilir; bu servislerin sunucuları yurt dışındadır.</p></div></article>
-        <article><span aria-hidden="true">02</span><div><h3>Yerel kayıt</h3><p>İnceleme ve sistem güvenliği için mesajlar ile kararlar yönetim bilgisayarında kaydedilir. Ham mesaj içeriği 45 gün sonra redakte edilir; kural ve puan geçmişi korunur.</p></div></article>
+        <article><span aria-hidden="true">02</span><div><h3>Yerel kayıt</h3><p>İnceleme ve sistem güvenliği için mesajlar ile kararlar yönetim bilgisayarında kaydedilir. Ham mesaj içeriği 45 gün sonra redakte edilir; kural ve ihlal puanı geçmişi korunur.</p></div></article>
         <article><span aria-hidden="true">03</span><div><h3>Herkese açık olmayan kararlar</h3><p>Mesajlarınız, kimliğiniz ve kişisel moderasyon kararlarınız bu GitHub sayfasında yayımlanmaz. Burada yalnız kurallar ve bunların değişiklik geçmişi bulunur.</p></div></article>
       </div>
     </section>
 
     <section class="section account-section" id="durum">
       <div class="shell account-box">
-        <div><p class="eyebrow">Yalnız size görünür</p><h2>Kendi puanınızı ve kararlarınızı öğrenin</h2><p>Koru'ya WhatsApp'tan özel mesaj gönderip aşağıdaki kelimelerden birini yazmanız yeterlidir.</p></div>
+        <div><p class="eyebrow">Yalnız size görünür</p><h2>Kendi ihlal puanınızı ve kararlarınızı öğrenin</h2><p>Koru'ya WhatsApp'tan özel mesaj gönderip aşağıdaki kelimelerden birini yazmanız yeterlidir.</p></div>
         <div class="commands">
-          <div><code>durum</code><span>Son 30 gündeki puan ve ihlal sayısı</span></div>
+          <div><code>durum</code><span>Son 30 gündeki ihlal puanı ve ihlal sayısı</span></div>
           <div><code>kararlar</code><span>Size ait son kararlar</span></div>
           <div><code>kurallar</code><span>Bu sayfanın bağlantısı</span></div>
         </div>
