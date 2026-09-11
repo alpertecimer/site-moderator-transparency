@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesetId": "v1.4",
+  "rulesetId": "v1.5",
   "terminology": {
     "pointLabel": "ihlal puanı",
     "noPointLabel": "ihlal puanı yok"
@@ -108,7 +108,7 @@
       "id": "K08",
       "title": "Alay/küçümseme/tahrik",
       "automation": "ai",
-      "basePoints": 2,
+      "basePoints": 1,
       "milestone": "V0.3"
     },
     {
@@ -203,5 +203,5 @@
       "milestone": "V0.5"
     }
   ],
-  "sha256": "9be007fbb0ed9e7f998e27ae2881465a01489dc380e585f62a3a97fbf1373b85"
+  "sha256": "bee8d61c3027d7e104ba6a9d3f99242d451abc5d65dd249726856184e7836125"
 }
